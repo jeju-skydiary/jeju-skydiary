@@ -1,0 +1,7 @@
+{
+  "name": "드론여지도 (Drone Yeojido)",
+  "description": "제주도의 아름다운 관광지와 카페를 드론 영상으로 감상할 수 있는 인터랙티브 지도 앱입니다.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

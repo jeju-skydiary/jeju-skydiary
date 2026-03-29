@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+.custom-tooltip {
+  background: white !important;
+  border: none !important;
+  border-radius: 12px !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  padding: 8px 16px !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.custom-tooltip::before {
+  border-top-color: white !important;
+}
+
+.anime-map-filter .leaflet-tile-pane {
+  filter: saturate(1.6) brightness(1.05) contrast(1.1) sepia(0.05);
+}
+
+.anime-map-filter .leaflet-container {
+  background-color: #e3f2fd !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: #f0f9ff;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Custom Popup Styling */
+.leaflet-popup-content-wrapper {
+  padding: 0 !important;
+  border-radius: 1.5rem !important;
+  overflow: hidden !important;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: auto !important;
+}
+
+.leaflet-popup-tip {
+  display: none !important;
+}
+
+.leaflet-popup-close-button {
+  display: none !important;
+}
